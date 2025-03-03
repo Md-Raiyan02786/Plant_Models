@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+</head>
+<body>
+    <h1>Upload an Image for Plant Disease Prediction</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="plant">Choose Plant:</label>
+        <select name="plant" id="plant">
+            <option value="tomato">Tomato</option>
+            <option value="potato">Potato</option>
+            <option value="pepper">Pepper</option>
+        </select>
+        <br><br>
+        <input type="file" name="file" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
